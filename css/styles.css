@@ -1,0 +1,269 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  /* to define colors */
+  --first-color: #163172;
+  --second-color: #1e56a0;
+  --third-color: #726d6d;
+  --fourth-color: #0a0a0a;
+  --fifth-color: #fdfdfc;
+  --sixth-color: #da7e06;
+  --seventh-color:#522e03;
+}
+
+
+.cover{
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  background: var(--sixth-color);
+}
+
+/* social icon  */
+
+.phone{
+  z-index: 1;
+  font-weight: 200;
+}
+.phone i{
+  color: var(--third-color);
+}
+.phone a{
+  color:var(--third-color);
+  font-size: 13px;
+  font-weight: bold;
+}
+.reg{
+  width: 60%;
+  text-align:right;
+}
+.reg a{
+  color:var(--third-color);
+  font-size: 13px;
+  /* font-weight: bold; */
+}
+
+.social-icon{
+
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.icon-group{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: space-between;
+}
+
+
+.social-icon h3{
+  font-size: 30px;
+  text-align: center;
+  color: var(--fifth-color);
+}
+
+.social-icon p a{
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.social-icon p a i{
+  font-size: 30px;
+  color: var(--fifth-color);
+}
+.social-icon p a:hover{
+  background: var(--sixth-color);
+  border-color: var(--seventh-color);
+}
+.social-icon p a:hover i{
+  color:var(--seventh-color);;
+}
+
+/* Navbar */
+
+
+.navbar {
+  background-color: var(--sixth-color);
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: inline-block;
+  background: var(--sixth-color);
+  border-bottom: 1px solid var(--fifth-color);
+  margin: 0;
+  padding: 0px 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+ul#myRow {
+  list-style-type: none;
+}
+
+.navbar .navbar-brand img {
+  width: auto;
+  height: 3rem;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .navbar-nav .nav-item a {
+  color: var(--fifth-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 3px;
+}
+.navbar .navbar-nav .nav-item a:hover,
+.navbar .navbar-nav .nav-item a:focus,
+.navbar .navbar-nav .nav-item a:active {
+  color: var(--seventh-color);
+}
+
+.centered {
+  position: absolute;
+  color: var(--sixth-color);
+  font-size: 2rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* rows */
+
+.actions {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 0px;
+}
+
+.btn-get-started{
+  background: var(--fifth-color);
+  border: 2px solid var(--sixth-color);
+  color: var(--sixth-color);
+}
+
+.btn-get-started:hover{
+  background: none;
+  border: 2px solid var(--seventh-color);
+  color: var(--seventh-color);
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* Menu */
+
+.item .img-box {
+  height: 160px;
+  width: 100%;
+  position: relative;
+}
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.item h4 {
+  font-size: 18px;
+  margin: 0px 0;
+  font-weight: bold;
+}
+.thumb-wrapper {
+  text-align: center;
+  padding:2rem;
+  background:#fff;
+  border-radius: .5rem;
+  border:.1rem solid rgba(0,0,0,.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+}
+.thumb-content {
+  padding: 15px;
+}
+.item-price {
+  font-size: 20px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
+.item-price span {
+  color: var(--second-color);
+  font-size: 110%;
+}
+
+/* footer */
+footer {
+  background-color: var(--sixth-color);
+}
+
+/* copy right */
+.footer-copyright > a {
+  color: var(--fifth-color);
+  text-decoration: none;
+  font-size: large;
+}
+
+/* back to top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* display: none; */
+}
+
+/* contact form */
+.contactus{
+  width: 100%;
+  background: var(--six-color);
+  color: var(--sixth-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+.contactus .form-group label{
+  font-weight: bold;
+  color: var(--sixth-color);
+}
+
+.btn-book{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color:var(--fifth-color);
+  border-radius: 10px;
+  font-weight: bold;
+  background: var(--sixth-color);
+}
+
+.btn-book:hover,
+.btn-book:focus {
+  background-color: var(--sixth-color);
+  color: var(--seventh-color);
+}
